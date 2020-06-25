@@ -1,8 +1,12 @@
 # gosrv
 
-gosrv is a simple HTTP file server designed for prototyping applications. It
+`gosrv` is a simple HTTP file server designed for prototyping applications. It
 is secure by default (ie. HTTPS first). The main goal is to ease the
 introduction of HTTPS while developing client side web applications.
+
+Upon running with `https` it automatically transfers **plaintext** `http` 
+traffic to `https`, thereby providing modern production equivalent setup at
+development time. 
 
 ## Usage 
 
