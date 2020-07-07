@@ -40,10 +40,10 @@ $ cd /dir/to/serve
 $ gosrv -host 0.0.0.0 -port 9000 
 ```
  
- **Serve alternate directory**
+**Serve alternate directory**
 
-By default, server server the current working directory `.` but you can serve
-any directory by using `-dir` flag.
+By default, server the current working directory `.` but you can serve any 
+directory by using `-dir` flag.
 
 ```console
 $ cd /dir/not/to/serve
@@ -77,7 +77,7 @@ beforehand, which in most cases will already be there.
 signing authority. You will be asked a passphrase, choose a secret one. 
 
 ```console
-$  openssl genrsa -des3 -out ca.key 8192
+$ openssl genrsa -des3 -out ca.key 8192
 # Generates RSA private key, with 8129 bit long modulus.  
 ```
 
@@ -118,7 +118,7 @@ IP.2 = 127.0.0.1
 in previous steps.
 
 ```console
-$  openssl x509 -req -in localhost.csr -CA ca.pem -CAkey ca.key -CAcreateserial -out localhost.crt -days 4096 -sha256 -extfile localhost.ext
+$ openssl x509 -req -in localhost.csr -CA ca.pem -CAkey ca.key -CAcreateserial -out localhost.crt -days 4096 -sha256 -extfile localhost.ext
 ```
 
 6. Now finally add the `ca.pem` file generated in the 2nd step to the 
