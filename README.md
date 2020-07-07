@@ -1,5 +1,7 @@
 # gosrv
 
+![Go](https://github.com/hemantjadon/gosrv/workflows/gosrv/badge.svg?branch=master&event=push)
+
 `gosrv` is a simple HTTP file server designed for prototyping applications. It
 is secure by default (ie. HTTPS first). The main goal is to ease the
 introduction of HTTPS while developing client side web applications.
